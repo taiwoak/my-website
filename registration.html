@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>Registration</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="styles.css">
+     <link rel="icon" href="images/logoname.png" type="image/icon type">
+ </head>
+ <body>
+    <header>
+        <nav class="wrapper">
+           <img src="images/logoname.png" alt="Taiwo Akerele Logo" width="100px" height="100px" class="logo">
+           <ul class="home">
+               <li><a href="index.html">Home</a></li>
+           </ul>
+           <ul class="leftside">
+               <li><a href="contact.html">Contact</a></li>
+               <li><a href="registration.html">Registration</a></li>
+           </ul>
+           <a href="login.html"><input type="button" class="login" name="login" value="Login"> </a>
+        </nav>
+    </header>
+    <main class="registration-wrapper">
+        <form action="" method="get" class="registration-container">
+            <table> 
+             <tr>
+              <td>
+                <label for="name" class="name">First Name</label> 
+                <input type="text" name="name" class="input" maxlength="30" required>
+              </td>
+              <td class="td-left">
+                <label for="name" class="name">Last Name</label> 
+                <input type="text" name="name" class="input" maxlength="30" required>
+              </td>
+              <td class="td-left">
+                <label for="name" class="name">Phone Number</label> 
+                <input type="tel" name="Number" class="input" maxlength="30" required>
+              </td>
+             </tr>
+             <tr>
+                <td>
+                  <label for="gender" class="name">Gender</label> 
+                  <select name="gender" class="input" maxlength="30" required>
+                      <option value="blank"></option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="neutral">Neutral</option>
+                  </select>
+                </td>
+                <td class="td-left">
+                  <label for="country" class="name">Country</label> 
+                  <input type="text" name="country" class="input" maxlength="30" required>
+                </td>
+                <td class="td-left">
+                  <label for="state/province" class="name">State/Province</label> 
+                  <input type="text" name="state" class="input" maxlength="30" required>
+                </td>
+             </tr>
+             <tr>
+                <td>
+                 <label for="email" class="email">Email Address</label>
+                 <input type="email" name="email" class="input" maxlength="40" required>
+                </td>
+                <td class="td-left">
+                  <label for="password" class="name">Password</label> 
+                  <input type="password" name="name" class="input" maxlength="30" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                </td>
+                <td class="td-left">
+                  <label for="password" class="name">Confirm Password</label> 
+                  <input type="password" name="name" class="input" maxlength="30" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                </td>
+             </tr>
+            </table> 
+             <input type="submit" name="submit" value="Submit" class="submit">
+        </form> 
+    </main>
+</body>
+</html>

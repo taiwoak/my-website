@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>Contact</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="styles.css">
+     <link rel="icon" href="images/logoname.png" type="image/icon type">
+ </head>
+ <body>
+    <header>
+        <nav class="wrapper">
+           <img src="images/logoname.png" alt="Taiwo Akerele Logo" width="100px" height="100px" class="logo">
+           <ul class="home">
+               <li><a href="index.html">Home</a></li>
+           </ul>
+           <ul class="leftside">
+               <li><a href="contact.html">Contact</a></li>
+               <li><a href="registration.html">Registration</a></li>
+           </ul>
+           <a href="login.html"><input type="button" class="login" name="login" value="Login"> </a>
+        </nav>
+    </header>
+    <main class="contact-wrapper">
+       <form action="" method="get" class="form-container">
+        <table> 
+         <tr>
+          <td>
+            <label for="name" class="name">Name</label> 
+            <input type="text" name="name" class="input" maxlength="30" required>
+          </td>
+          <td class="td-left">
+            <label for="email" class="email">Email Address</label>
+            <input type="email" name="email" class="input" maxlength="40" required>
+          </td>
+         </tr>
+        </table>
+         <div>
+          <label for="message" class="message">Message</label>
+          <textarea name="message" class="textarea" maxlength="500" required></textarea>
+         </div>  
+         <input type="submit" name="submit" value="Submit" class="submit">
+       </form> 
+    </main>
+</body>
+</html>

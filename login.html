@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>Login</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="styles.css">
+     <link rel="icon" href="images/logoname.png" type="image/icon type">
+ </head>
+ <body>
+    <header>
+        <nav class="wrapper">
+           <img src="images/logoname.png" alt="Taiwo Akerele Logo" width="100px" height="100px" class="logo">
+           <ul class="home">
+               <li><a href="index.html">Home</a></li>
+           </ul>
+           <ul class="leftside">
+               <li><a href="contact.html">Contact</a></li>
+               <li><a href="registration.html">Registration</a></li>
+           </ul>
+           <a href="login.html"><input type="button" class="login" name="login" value="Login"> </a>
+        </nav>
+    </header>
+    <main class="login-wrapper">
+        <form action="" method="get" class="login-container">
+            <input id="email" type="email" name="email" placeholder="Email" maxlength="40" required>
+            <input id="password" type="password" name="password" placeholder="Password" maxlength="30" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+          <input type="submit" name="submit" value="Sign In" class="signin">
+        </form> 
+     </main>
+</body>
+</html>
